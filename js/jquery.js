@@ -4,7 +4,7 @@ $(document).ready(function() {
 	var pathname = window.location.pathname;
 	alert( pathname );
 	if (pathname == '/') {
-		pathname = pathname.replace('/', '/' + nav[0]);
+		pathname = pathname.replace('/', '/work/' + nav[0]);
 	}
 	var pagename = pathname.replace('/', '');
 	var currentposition = $.inArray(pagename, nav);
