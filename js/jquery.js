@@ -1,9 +1,8 @@
 /* url auto array */
-alert("OK");
 $(document).ready(function() {
 	var nav = [ "ehouse.html", "cm.html", "rent.html", "marathon.html", "process.html", "icon.html" ];
 	var pathname = window.location.pathname;
-	
+	alert("OK");
 	if (pathname == '/') {
 		pathname = pathname.replace('/', '/' + nav[0]);
 	}
