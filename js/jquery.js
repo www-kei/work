@@ -5,11 +5,12 @@ $(document).ready(function() {
 	if (pathname == '/') {
 		pathname = pathname.replace('/', '/' + nav[0]);
 	}
+	alert(pathname);
 	var pagename = pathname.replace('/', '');
 	var currentposition = $.inArray(pagename, nav);
-	alert(currentposition);
+	//alert(currentposition);
 	var nextposition = currentposition + 1;
-	alert(nextposition);
+	//alert(nextposition);
 	$('.next').click(function(e){
 		e.preventDefault();
 		
