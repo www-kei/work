@@ -7,13 +7,15 @@ $(document).ready(function() {
 	}
 	var pagename = pathname.replace('/', '');
 	var currentposition = $.inArray(pagename, nav);
+	alert(currentposition);
 	var nextposition = currentposition + 1;
+	alert(nextposition);
 	$('.next').click(function(e){
 		e.preventDefault();
 		
 		if (nextposition < nav.length) {
 			window.location = nav[nextposition];
-			alert(nav[nextposition]);
+			//alert(nav[nextposition]);
 	   	} else {
 	   		window.location = nav[0];
 			//$('.next').css( "display", "none" );
