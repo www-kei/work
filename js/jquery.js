@@ -6,7 +6,6 @@ $(document).ready(function() {
 		pathname = pathname.replace('/', '/' + nav[0]);
 	}
 	var pagename = pathname.replace('/', '');
-	alert(pagename);
 	var currentposition = $.inArray(pagename, nav);
 	var nextposition = currentposition + 1;
 	$('.next').click(function(e){
@@ -14,6 +13,7 @@ $(document).ready(function() {
 		
 		if (nextposition < nav.length) {
 			window.location = nav[nextposition];
+			alert(nav[nextposition]);
 	   	} else {
 	   		window.location = nav[0];
 			//$('.next').css( "display", "none" );
