@@ -5,7 +5,9 @@ $(document).ready(function() {
 	if (pathname == '/') {
 		pathname = pathname.replace('/', '/' + nav[0]);
 	}
-	alert(pathname);
+	//alert(pathname);
+	var page = nav.substring(nav.lastIndexOf('/')+1);
+	alert(page);
 	var pagename = pathname.replace('/', '');
 	var currentposition = $.inArray(pagename, nav);
 	//alert(currentposition);
