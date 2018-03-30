@@ -2,7 +2,7 @@
 $(document).ready(function() {
 	var nav = [ "ehouse.html", "cm.html", "rent.html", "marathon.html", "process.html", "icon.html" ];
 	var pathname = window.location.pathname;
-	alert( pathname );
+	
 	if (pathname == '/') {
 		pathname = pathname.replace('/', '/work/' + nav[0]);
 	}
@@ -34,7 +34,7 @@ $(document).ready(function() {
 	   	}
 	});*/
 });
-
+alert( pathname );
 /* google analytics */
 /*var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-34137724-1']);
