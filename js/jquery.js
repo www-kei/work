@@ -2,12 +2,11 @@
 $(document).ready(function() {
 	var nav = [ "ehouse.html", "cm.html", "rent.html", "marathon.html", "process.html", "icon.html" ];
 	var pathname = window.location.pathname;
-	alert( pathname );
 	if (pathname == '/') {
 		pathname = pathname.replace('/', '/' + nav[0]);
-		alert( pathname );
 	}
 	var pagename = pathname.replace('/', '');
+	alert(pagename);
 	var currentposition = $.inArray(pagename, nav);
 	var nextposition = currentposition + 1;
 	$('.next').click(function(e){
