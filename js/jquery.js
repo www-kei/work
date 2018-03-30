@@ -2,23 +2,14 @@
 $(document).ready(function() {
 	var nav = [ "ehouse.html", "cm.html", "rent.html", "marathon.html", "process.html", "icon.html" ];
 	var pathname = window.location.pathname;
-	/*if (pathname == '/') {
-		pathname = pathname.replace('/', '/' + nav[0]);
-	}*/
-	//alert(pathname);
 	var pathname = pathname.substring(pathname.lastIndexOf('/')+1);
-	//alert(pathname);
 	var pagename = pathname.replace('/', '');
 	var currentposition = $.inArray(pagename, nav);
-	alert(currentposition);
 	var nextposition = currentposition + 1;
-	//alert(nextposition);
 	$('.next').click(function(e){
-		e.preventDefault();
-		
+		e.preventDefault();		
 		if (nextposition < nav.length) {
 			window.location = nav[nextposition];
-			alert(nav[nextposition]);
 	   	} else {
 	   		window.location = nav[0];
 			//$('.next').css( "display", "none" );
