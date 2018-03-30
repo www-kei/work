@@ -2,15 +2,15 @@
 $(document).ready(function() {
 	var nav = [ "ehouse.html", "cm.html", "rent.html", "marathon.html", "process.html", "icon.html" ];
 	var pathname = window.location.pathname;
-	if (pathname == '/') {
+	/*if (pathname == '/') {
 		pathname = pathname.replace('/', '/' + nav[0]);
-	}
+	}*/
 	//alert(pathname);
-	var page = pathname.substring(pathname.lastIndexOf('/')+1);
-	alert(page);
+	var pathname = pathname.substring(pathname.lastIndexOf('/')+1);
+	//alert(pathname);
 	var pagename = pathname.replace('/', '');
 	var currentposition = $.inArray(pagename, nav);
-	//alert(currentposition);
+	alert(currentposition);
 	var nextposition = currentposition + 1;
 	//alert(nextposition);
 	$('.next').click(function(e){
@@ -18,7 +18,7 @@ $(document).ready(function() {
 		
 		if (nextposition < nav.length) {
 			window.location = nav[nextposition];
-			//alert(nav[nextposition]);
+			alert(nav[nextposition]);
 	   	} else {
 	   		window.location = nav[0];
 			//$('.next').css( "display", "none" );
