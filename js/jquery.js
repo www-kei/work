@@ -6,7 +6,7 @@ $(document).ready(function() {
 		pathname = pathname.replace('/', '/' + nav[0]);
 	}
 	//alert(pathname);
-	var page = nav.substring(nav.lastIndexOf('/')+1);
+	var page = pathname.substring(pathname.lastIndexOf('/')+1);
 	alert(page);
 	var pagename = pathname.replace('/', '');
 	var currentposition = $.inArray(pagename, nav);
