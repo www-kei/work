@@ -1,10 +1,11 @@
 /* url auto array */
+alert("OK");
 $(document).ready(function() {
 	var nav = [ "ehouse.html", "cm.html", "rent.html", "marathon.html", "process.html", "icon.html" ];
 	var pathname = window.location.pathname;
 	
 	if (pathname == '/') {
-		pathname = pathname.replace('/', '/work/' + nav[0]);
+		pathname = pathname.replace('/', '/' + nav[0]);
 	}
 	var pagename = pathname.replace('/', '');
 	var currentposition = $.inArray(pagename, nav);
