@@ -11,12 +11,10 @@ a,h1,h2,h2,h3,h4,h5,h6,input,textarea,select,button,small{color:inherit;font-siz
 img{display:block;height:auto;border:0}
 
 /* Layout */
-#header{position:relative;width:80%;max-width:1400px;margin:0 auto;padding:60px 0;overflow:hidden}
-#header li{float:left;margin-right:20px}
-#header li.selected{padding-bottom:5px;border-bottom:1px solid #ccc}
-#header li a{font-family:dotum;color:#333}
+body{padding-bottom:60px}
+header{position:relative;width:80%;max-width:1400px;margin:0 auto;padding:60px 0;overflow:hidden;font-size:32px}
 
-#listWrap{padding:50px 0;overflow:hidden}
+#listWrap{overflow:hidden}
 #list{position:relative;width:80%;max-width:1400px;margin:0 auto;overflow:hidden}
 #list li{display:block;position:relative;float:left;height:100%}
 #list li .wrap{position:relative;width:100%;height:100%}
@@ -48,8 +46,8 @@ img{display:block;height:auto;border:0}
 #footNav li a{display:block;padding:40px 0;color:#333;text-align:center}
 #footNav li a:hover{background:#333;color:#fff}
 #footNav .prev,#footNav .next{font-size:14px;font-weight:bold}
-#footer{position:relative;overflow:hidden;padding:60px 0}
-#footer h1{float:none;width:80%;max-width:1400px;margin:0 auto;font:normal 14px Helvetica;color:#333;text-align:right}
+footer{position:relative;overflow:hidden;padding:60px 0}
+footer h1{float:none;width:80%;max-width:1400px;margin:0 auto;font:normal 14px Helvetica;color:#333;text-align:right}
 
 .ptb50{padding-top:5%;padding-bottom:5%}
 .pt50{padding-top:5%}
@@ -107,4 +105,3 @@ img{max-width:100%}
 .textbox h3,.textbox p,.inbox h3,.inbox p{font-family:'애플 SD 산돌고딕 Neo','Apple SD Gothic Neo','AppleGothic','notokr-demilight';text-align:center}
 .textbox h3,.inbox h3{font-size:25px;font-weight:normal}
 .textbox p,.inbox p{font-size:16px}
-}
